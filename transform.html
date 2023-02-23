@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+            background-image:linear-gradient(rgb(248, 131, 131),rgb(255, 255, 255));
+        }
+        #cap{
+            height:150px;
+            background-color:#FFFFFF;
+        }
+        #cap:hover{
+            text-transform: uppercase;
+        }
+        #skew{
+            height:150px;
+            width:300px;
+            background-color:#FFFFFF;
+            transform: skew(30deg,20deg);
+            margin:0 0 0 550px;
+            
+        }
+        #skew:hover{
+            transform: skew(0deg,0deg);
+        }
+        .pa{
+            transform: skew(-30deg,-20deg);
+        }
+        #rot{
+            height:150px;
+            background-color:#FFFFFF;
+            transition:all 2s ease-in-out;
+            
+        }
+        #rot:hover{
+            transform: rotateX(180deg);
+            
+        }
+        #trans{
+            height:150px;
+            background-color:#FFFFFF;
+        }
+        #trans:hover{
+            transform: scale(0.5) translate(100px,50%);
+        }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div id="cap">
+            <h1>The text-transform : Capitalize</h1>
+            <center><p>hover me</p></center>
+        </div>
+        
+        <div id="trans">
+            <h3>Transform : scale and translate</h3>
+            <center><p>hover me</p></center>
+        </div>
+        
+        <div id="rot">
+            <h2>Transform : rotate</h2>
+            <center><p>hover me</p></center>
+        </div><br><br><br><br>
+        
+        <div id="skew">
+            <h2>Transform : skew</h2>
+            <center><br><p class="pa">hover me</p></center>
+        </div>
+        <br><br><br><br>
+    </body>
+</html>
